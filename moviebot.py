@@ -53,7 +53,7 @@ def callapi_title(txt):
         if(resp_txt['Response'] == 'True'):
             framed_response = "Title: " + resp_txt['Title'] + "\n" + "Year: " + resp_txt['Year'] + "\n" + "Release Date: " + resp_txt['Released'] + "\n" + "Plot Summary: " + resp_txt['Plot'] + "\n"         
         else:
-            framed_response = "Invalid Movie title"
+            framed_response = "Movie title not found"
     else:
         framed_response = "Something went wrong! Please try again"
     return(framed_response)
